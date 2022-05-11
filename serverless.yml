@@ -1,0 +1,20 @@
+org: nithinibhandari1999
+app: my-express-application
+service: my-express-application
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: prod
+  region: us-east-1
+
+functions:
+  app:
+    handler: index.handler
+    events:
+      - httpApi:
+        method: "*"
+        path: "*"
+
+plugins:
+  - serverless-offline
