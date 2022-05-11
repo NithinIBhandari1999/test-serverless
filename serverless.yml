@@ -1,12 +1,13 @@
 org: nithinibhandari1999
 app: my-express-application
 service: my-express-application
+frameworkVersion: '3'
 
 provider:
   name: aws
   runtime: nodejs14.x
   stage: prod
-  region: us-east-1
+  region: ap-south-1
 
 functions:
   app:
