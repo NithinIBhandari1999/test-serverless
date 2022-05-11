@@ -6,6 +6,10 @@ app.get('/', function (req, res) {
 	return res.send('Hello World!');
 });
 
+app.get('/hello', function (req, res) {
+	return res.send('Hello World!');
+});
+
 app.get('/world', function (req, res) {
 	return res.send('Hello World!');
 });
